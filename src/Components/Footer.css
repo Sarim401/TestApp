@@ -1,7 +1,7 @@
 /* Footer.css */
 
 .footer {
-    position: fixed;
+    position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -11,6 +11,7 @@
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    margin-top: auto;
 }
 
 .footer-logo1 {

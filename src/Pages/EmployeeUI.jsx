@@ -10,11 +10,11 @@ const EmployeeUI = () => {
       <Navbar />
       <div className="content">
         <MoveTo imageSrc="/DriverLicense.svg" title="Assign The Driver" to="/AssignTheDriver" />
-        <MoveTo imageSrc="/AddUser.svg" title="Create New Accout" to="/AssignTheDriver" />
-        <MoveTo imageSrc="/Database.svg" title="Database" to="/AssignTheDriver" />
-        <MoveTo imageSrc="/DeliveryBox.svg" title="Approve Order" to="/AssignTheDriver" />
-        <MoveTo imageSrc="/UpdateUser.svg" title="Update The User" to="/AssignTheDriver" />
-        <MoveTo imageSrc="/Truck.svg" title="Add Vehicle" to="/AssignTheDriver" />
+        <MoveTo imageSrc="/AddUser.svg" title="Create New Accout" to="/AddUser" />
+        <MoveTo imageSrc="/Database.svg" title="Database" to="/DataBase" />
+        <MoveTo imageSrc="/DeliveryBox.svg" title="Approve Order" to="/ApproveOrder" />
+        <MoveTo imageSrc="/UpdateUser.svg" title="Update The User" to="/UpdateUser" />
+        <MoveTo imageSrc="/Truck.svg" title="Add Vehicle" to="/AddVehicle" />
       </div>
       <Footer />
     </div>

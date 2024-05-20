@@ -1,28 +1,28 @@
 .employee-ui-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #E5D7BD; /* Kolor tła */
-    height: 100vh; /* Ustawienie wysokości na 100% wysokości widoku */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
-  
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0px;
+  row-gap: 100px;
+  padding: 20px;
+  margin-top: 2%; /* Dodajemy odstęp na górze */
+  margin-bottom:2%; /* Dodajemy odstęp na dole */
+}
+
+/* Media queries dla responsywności */
+@media (max-width: 768px) {
   .content {
-    display: grid; /* Ustawienie kontenera na siatkę */
-    grid-template-columns: repeat(3, 1fr); /* Trzy kolumny o równej szerokości */
-    grid-gap: 60px; /* Odstęp między elementami */
-    justify-content: center; /* Wycentrowanie elementów */
-    margin-top: 10%; /* Dodaj odstęp od góry */
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  /* Dodatkowe stylowanie dla MoveTo komponentu */
-  .move-to {
-    margin: auto; /* Wycentrowanie pojedynczego elementu w siatce */
+}
+
+@media (max-width: 480px) {
+  .content {
+    grid-template-columns: 1fr;
   }
-  
-  
-  /* Ustaw Navbar na wierzchu */
-  .header {
-    z-index: 1;
-  }
-  
-  
+}
