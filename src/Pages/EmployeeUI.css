@@ -1,0 +1,28 @@
+.employee-ui-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E5D7BD; /* Kolor tła */
+    height: 100vh; /* Ustawienie wysokości na 100% wysokości widoku */
+}
+  
+  .content {
+    display: grid; /* Ustawienie kontenera na siatkę */
+    grid-template-columns: repeat(3, 1fr); /* Trzy kolumny o równej szerokości */
+    grid-gap: 60px; /* Odstęp między elementami */
+    justify-content: center; /* Wycentrowanie elementów */
+    margin-top: 10%; /* Dodaj odstęp od góry */
+  }
+  
+  /* Dodatkowe stylowanie dla MoveTo komponentu */
+  .move-to {
+    margin: auto; /* Wycentrowanie pojedynczego elementu w siatce */
+  }
+  
+  
+  /* Ustaw Navbar na wierzchu */
+  .header {
+    z-index: 1;
+  }
+  
+  

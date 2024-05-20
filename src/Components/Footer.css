@@ -1,0 +1,149 @@
+/* Footer.css */
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 21px 7%; /* 30% mniejszy padding */
+    background: #F2F0E4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.footer-logo1 {
+    display: flex;
+    align-items: center;
+}
+
+.keg-image1 {
+    height: 35px; /* 30% mniejsza wysokość */
+    margin-right: 7px; /* 30% mniejszy margines */
+}
+
+.logo-text1 {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+.main-title1 {
+    font-size: 28px; /* 30% mniejszy rozmiar czcionki */
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+}
+
+.sub-title1 {
+    font-size: 9.5px; /* 30% mniejszy rozmiar czcionki */
+    position: absolute;
+    top: 28px; /* 30% mniejsza wartość */
+    left: 24.5px; /* 30% mniejsza wartość */
+    width: 100%; /* Ensure it spans the same width as main-title */
+    text-align: center;
+    white-space: nowrap;
+}
+
+.privacy-policy {
+    margin: 0 14px; /* 30% mniejszy margines */
+    text-decoration: none;
+    color: #000;
+    font-size: 15px; /* 30% mniejszy rozmiar czcionki */
+}
+
+.privacy-policy:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    font-size: 15px; /* 30% mniejszy rozmiar czcionki */
+    color: #555;
+}
+
+.social-icons {
+    display: flex;
+    gap: 7px; /* 30% mniejszy odstęp */
+}
+
+.social-icon {
+    height: 25px; /* 30% mniejsza wysokość */
+    width: 25px; /* 30% mniejsza szerokość */
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 14.7px 5.6%; /* 30% mniejszy padding */
+    }
+
+    .keg-image1 {
+        height: 24.5px; /* 30% mniejsza wysokość */
+    }
+
+    .main-title1 {
+        font-size: 14.5px; /* 30% mniejszy rozmiar czcionki */
+    }
+
+    .sub-title1 {
+        font-size: 6.7px; /* 30% mniejszy rozmiar czcionki */
+        top: 9.8px; /* 30% mniejsza wartość */
+        left: 17.5px; /* 30% mniejsza wartość */
+    }
+
+    .privacy-policy {
+        margin: 9.8px 0; /* 30% mniejszy margines */
+        font-size: 6.8px; /* 30% mniejszy rozmiar czcionki */
+    }
+
+    .copyright {
+        font-size: 6.8px; /* 30% mniejszy rozmiar czcionki */
+    }
+
+    .social-icons {
+        gap: 4.9px; /* 30% mniejszy odstęp */
+    }
+
+    .social-icon {
+        height: 11.7px; /* 30% mniejsza wysokość */
+        width: 11.7px; /* 30% mniejsza szerokość */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 10.5px 3.5%; /* 30% mniejszy padding */
+    }
+
+    .keg-image1 {
+        height: 14px; /* 30% mniejsza wysokość */
+    }
+
+    .main-title1 {
+        font-size: 12.6px; /* 30% mniejszy rozmiar czcionki */
+    }
+
+    .sub-title1 {
+        font-size: 5.6px; /* 30% mniejszy rozmiar czcionki */
+        top: 7px; /* 30% mniejsza wartość */
+        left: 14px; /* 30% mniejsza wartość */
+    }
+
+    .privacy-policy {
+        margin: 7px 0; /* 30% mniejszy margines */
+        font-size: 4.9px; /* 30% mniejszy rozmiar czcionki */
+    }
+
+    .copyright {
+        font-size: 4.9px; /* 30% mniejszy rozmiar czcionki */
+    }
+
+    .social-icons {
+        gap: 3.5px; /* 30% mniejszy odstęp */
+    }
+
+    .social-icon {
+        height: 8.4px; /* 30% mniejsza wysokość */
+        width: 8.4px; /* 30% mniejsza szerokość */
+    }
+}
