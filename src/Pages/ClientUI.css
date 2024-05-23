@@ -1,0 +1,28 @@
+.client-ui-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .content-Client-UI {
+    display: flex;
+    justify-content: center; /* Wyśrodkuj zawartość poziomo */
+    align-items: center;
+    flex-grow: 1; /* Wypełnij dostępną przestrzeń */
+  }
+  
+  .centered-images {
+    display: flex;
+    justify-content: center; /* Wyśrodkuj obrazy w poziomie */
+    gap: 50%; /* Dodaj odstęp między obrazkami */
+  }
+  
+  /* Media queries dla responsywności */
+  @media (max-width: 768px) {
+    .centered-images {
+      flex-direction: column;
+      align-items: center; /* Wyśrodkuj obrazy w pionie */
+      gap: 20px; /* Dodaj odstęp między obrazkami */
+    }
+  }
+  
