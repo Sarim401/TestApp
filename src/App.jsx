@@ -7,6 +7,7 @@ import Login from "./Pages/Login";
 import EmployeeUI from "./Pages/EmployeeUI";
 import ClientUI from "./Pages/ClientUI";
 import "./App.css";
+import DriverUI from "./Pages/DriverUI";
 
 
 
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/EmployeeUI" element={<EmployeeUI />} />
           <Route path="/ClientUI" element={<ClientUI />} />
+          <Route path="/DriverUI" element={<DriverUI />} />
         </Routes>
       </div>
     </Router>
