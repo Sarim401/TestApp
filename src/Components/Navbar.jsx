@@ -1,26 +1,24 @@
 import React from "react";
 import LogoutButton from "./LogoutButton";
-import './Navbar.css'
+import './Navbar.css';
 
 const Navbar = ({onLogout}) => {
     return (
         <header className="header">
-                <a href="/" className="logo">
-                    <img src="/keg.svg" alt="Keg" className="keg-image" />
-                    <div className="logo-text">
-                        <div className="main-title">KegDelPol</div>
-                        <div className="sub-title">we deliver your beer</div>
-                    </div>
-                </a>
-
-                <nav className="navbar">
-                    <a href='/Login'>Home</a>
-                    <a href='/About'>About us</a>
-                    <a href='/Contact'>Contact</a>
-                </nav>
-                <LogoutButton onLogout={onLogout} />
+            <a href="/" className="logo">
+                <img src="/keg.svg" alt="Keg" className="keg-image" />
+                <div className="logo-text">
+                    <div className="main-title">KegDelPol</div>
+                    <div className="sub-title">we deliver your beer</div>
+                </div>
+            </a>
+            <nav className="navbar">
+                <a href='/Login'>Home</a>
+                <a href='/About'>About us</a>
+                <a href='/Contact'>Contact</a>
+            </nav>
         </header>
     )
 }
 
-export default Navbar
+export default Navbar;

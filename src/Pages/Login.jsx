@@ -6,9 +6,7 @@ import Main from '../Components/Main';
 const Login = () => {
   return (
     <div>
-        <Navbar />
         <Main />
-        <Footer />
     </div>
   );
 };

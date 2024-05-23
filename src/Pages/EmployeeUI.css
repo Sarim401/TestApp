@@ -10,19 +10,21 @@
   gap: 0px;
   row-gap: 100px;
   padding: 20px;
-  margin-top: 2%; /* Dodajemy odstęp na górze */
-  margin-bottom:2%; /* Dodajemy odstęp na dole */
+  padding-top: 10%; /* Upewnij się, że pasuje do wysokości navbar */
+  padding-bottom: 60px; /* Upewnij się, że pasuje do wysokości footer */
 }
 
 /* Media queries dla responsywności */
 @media (max-width: 768px) {
   .content {
     grid-template-columns: repeat(2, 1fr);
+    padding-top: 30%;
   }
 }
 
 @media (max-width: 480px) {
   .content {
     grid-template-columns: 1fr;
+    padding-top: 60%;
   }
 }
