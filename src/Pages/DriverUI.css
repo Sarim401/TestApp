@@ -1,0 +1,41 @@
+.driver-ui-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .content-Driver-UI {
+    display: flex;
+    flex-direction: column; /* Ustaw kontener zawartości jako kolumnę */
+    justify-content: center; /* Wyśrodkuj zawartość poziomo */
+    align-items: center; /* Wyśrodkuj zawartość w pionie */
+    flex-grow: 1; /* Wypełnij dostępną przestrzeń */
+    position: relative; /* Ustaw kontener jako pozycjonowany */
+  }
+  
+  .centered-images-driver {
+    display: flex;
+    justify-content: center; /* Wyśrodkuj obrazy w poziomie */
+    gap: 50%; /* Dodaj odstęp między obrazkami */
+  }
+  
+  .choose-action-driver {
+    text-align: center; /* Wyśrodkuj tekst */
+    margin-bottom: 30px; /* Zmniejsz odległość między napisem a obrazkami */
+    font-size: 50px; /* Dostosuj rozmiar czcionki według potrzeb */
+    font-weight: bold; /* Dostosuj wagę czcionki według potrzeb */
+    position: absolute; /* Ustaw pozycję absolutną */
+    top: calc(20%); /* Umieść napis tuż pod Navbar */
+    left: 50%; /* Wyśrodkuj poziomo */
+    transform: translateX(-50%); /* Skoryguj pozycję poziomą */
+  }
+  
+  /* Media queries dla responsywności */
+  @media (max-width: 768px) {
+    .centered-images-driver {
+      flex-direction: column;
+      align-items: center; /* Wyśrodkuj obrazy w pionie */
+      gap: 20px; /* Dodaj odstęp między obrazkami */
+    }
+  }
+  
