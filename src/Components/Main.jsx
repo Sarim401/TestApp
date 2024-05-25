@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import "./Main.css";
+import ConfirmButton from "./ConfirmButton";
 
 const Main = () => {
   return (
@@ -19,7 +20,7 @@ const Main = () => {
               <label htmlFor="password">Password</label>
               <input type="password" id="password" placeholder="Password" className="input-field" />
             </div>
-            <button type="submit" className="submit-button">Sign in</button>
+            <ConfirmButton buttonText="Sign in" />
           </form>
         </div>
       </div>

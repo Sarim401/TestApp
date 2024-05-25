@@ -1,41 +1,40 @@
-.client-ui-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+
+.content-client-ui {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px; /* Dodaj padding, aby uniknąć nachodzenia na navbar */
+  position: relative;
+}
+
+.choose-action-client {
+  font-size: 50px; /* Dostosuj rozmiar czcionki według potrzeb */
+  margin-bottom: 30px; /* Zmniejsz odległość między napisem a obrazkami */
+}
+
+.centered-images-client {
+  display: flex;
+  justify-content: center;
+  gap: 50px; /* Dodaj odstęp między obrazkami */
+  flex-wrap: wrap; /* Pozwól na zawijanie się elementów na mniejszych ekranach */
+  width: 100%; /* Upewnij się, że obrazy są wyśrodkowane */
+}
+
+@media (max-width: 768px) {
+  .content-client-ui {
+    padding-top: 150px; /* Zwiększenie odstępu na mniejszych ekranach */
   }
-  
-  .content-Client-UI {
-    display: flex;
-    flex-direction: column; /* Ustaw kontener zawartości jako kolumnę */
-    justify-content: center; /* Wyśrodkuj zawartość poziomo */
-    align-items: center; /* Wyśrodkuj zawartość w pionie */
-    flex-grow: 1; /* Wypełnij dostępną przestrzeń */
-    position: relative; /* Ustaw kontener jako pozycjonowany */
+
+  .choose-action-client {
+    font-size: 30px; /* Dostosuj rozmiar czcionki dla mniejszych ekranów */
+    margin-bottom: 20px; /* Dostosuj odstęp dla mniejszych ekranów */
   }
   
   .centered-images-client {
-    display: flex;
-    justify-content: center; /* Wyśrodkuj obrazy w poziomie */
-    gap: 50%; /* Dodaj odstęp między obrazkami */
+    flex-direction: column; /* Ustaw układ pionowy na mniejszych ekranach */
+    gap: 20px; /* Dodaj odstęp między obrazkami */
+    align-items: center; /* Wyśrodkuj obrazy w pionie */
   }
-  
-  .choose-action-client {
-    text-align: center; /* Wyśrodkuj tekst */
-    margin-bottom: 30px; /* Zmniejsz odległość między napisem a obrazkami */
-    font-size: 50px; /* Dostosuj rozmiar czcionki według potrzeb */
-    font-weight: bold; /* Dostosuj wagę czcionki według potrzeb */
-    position: absolute; /* Ustaw pozycję absolutną */
-    top: calc(20%); /* Umieść napis tuż pod Navbar */
-    left: 50%; /* Wyśrodkuj poziomo */
-    transform: translateX(-50%); /* Skoryguj pozycję poziomą */
-  }
-  
-  /* Media queries dla responsywności */
-  @media (max-width: 768px) {
-    .centered-images {
-      flex-direction: column;
-      align-items: center; /* Wyśrodkuj obrazy w pionie */
-      gap: 20px; /* Dodaj odstęp między obrazkami */
-    }
-  }
-  
+}
