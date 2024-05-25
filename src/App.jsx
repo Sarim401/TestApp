@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from "./Pages/Home";
 import Contact from "./Pages/Contact";
 import About from "./Pages/About";
@@ -8,6 +9,7 @@ import EmployeeUI from "./Pages/EmployeeUI";
 import ClientUI from "./Pages/ClientUI";
 import "./App.css";
 import DriverUI from "./Pages/DriverUI";
+import AssignTheDriverUI from "./Pages/AssignTheDriverUI";
 
 
 
@@ -23,6 +25,7 @@ const App = () => {
           <Route path="/EmployeeUI" element={<EmployeeUI />} />
           <Route path="/ClientUI" element={<ClientUI />} />
           <Route path="/DriverUI" element={<DriverUI />} />
+          <Route path="/AssignTheDriverUI" element={<AssignTheDriverUI />} />
         </Routes>
       </div>
     </Router>
