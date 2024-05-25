@@ -22,7 +22,9 @@ const DropdownInput = ({ label, options }) => {
 
   const handleOptionSelect = (value) => {
     setInputValue(value);
+    
     setIsListVisible(false);
+    console.log(value);
   };
 
   const handleInputBlur = () => {

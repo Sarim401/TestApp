@@ -10,6 +10,7 @@ import ClientUI from "./Pages/ClientUI";
 import "./App.css";
 import DriverUI from "./Pages/DriverUI";
 import AssignTheDriverUI from "./Pages/AssignTheDriverUI";
+import UpdateUser from "./Pages/UpdateUser";
 
 
 
@@ -26,6 +27,7 @@ const App = () => {
           <Route path="/ClientUI" element={<ClientUI />} />
           <Route path="/DriverUI" element={<DriverUI />} />
           <Route path="/AssignTheDriverUI" element={<AssignTheDriverUI />} />
+          <Route path="/UpdateUser" element={<UpdateUser />} />
         </Routes>
       </div>
     </Router>

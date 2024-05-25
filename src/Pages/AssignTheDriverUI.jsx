@@ -6,6 +6,8 @@ import ButtonWithText from '../Components/ConfirmButton';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './AssignTheDriverUI.css'; // Zaimportuj plik stylów CSS
 
+
+
 const AssignTheDriverUI = () => {
   return (
     <div className="assign-the-driver-ui-container d-flex flex-column min-vh-100">
